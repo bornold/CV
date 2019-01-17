@@ -1,11 +1,10 @@
-
 \documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
 \moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
-\moderncvcolor{green}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
-%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
-%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
 % character encoding
 \usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
@@ -13,7 +12,7 @@
 
 % adjust the page margins
 \usepackage[scale=0.75]{geometry}
-%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 % personal data
@@ -22,15 +21,13 @@
 \email{jonas.bornold@gmail.com}                               % optional, remove / comment the line if not wanted
 \address{Richertsgatan 2F}{412 81}{Göteborg}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
 \phone[mobile]{+46(0)~702~--~75~44~93}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
-%\phone[fixed]{+2~(345)~678~901}
-%\phone[fax]{+3~(456)~789~012}
 %\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
-%\social[linkedin]{john.doe}                        % optional, remove / comment the line if not wanted
+\social[linkedin]{bornold}                        % optional, remove / comment the line if not wanted
 %\social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
 \social[github]{bornold}                              % optional, remove / comment the line if not wanted
 %\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
 \photo[128pt][0pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
-%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+%\quote{You need to get used to killing it, often, so you can replace it with whatever you end up needing.}                                 % optional, remove / comment the line if not wanted
 
 % bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
 %   to show numerical labels in the bibliography (default is to show no labels)
@@ -48,7 +45,51 @@
 %\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
-\section{Utbildning}
+
+\section{Arbetslivserfarenhet}
+
+\cventry{2017--Idag}{Lead developer}{Combitech AB}{Gothenburg}{}
+{
+  Xamarin, Xamarin.Forms
+  \begin{itemize}
+  \item Android applikation i Volvo och Mack Trucks brand
+  \item iOS applikation i Volvo och  Mack Trucks brand
+  \end{itemize}
+  Video av resultatet kan ses på \url{http://www.qualisys.com/software/unity/}
+}
+
+\cventry{2016}{Developer}{Combitech AB}{Gothenburg}{}
+{
+  Varius proof of concept applications
+  \begin{itemize}
+  \item Ett system för realtids animering av karaktärer från motion capture.
+  \item Automatisk identifiering av segment av humanoida karaktärer i Unity.
+  \item Demonstrationsspel i VR för att visa möjligheter med ett mo-cap system.
+  \end{itemize}
+}
+
+\cventry{2015}{Utvecklare}{Qualisys AB}{Gothenburg}{}
+{
+  Projektanställd för  att utveckla en lösning att från motion capture data gå till att driva en männsklig karaktär i realtid, arbetet var en fortsättning på exjobbet. 
+  \newline
+  \begin{itemize}
+  \item Ett system för realtids animering av karaktärer från motion capture.
+  \item Automatisk identifiering av segment av humanoida karaktärer i Unity.
+  \item Demonstrationsspel i VR för att visa möjligheter med ett mo-cap system.
+  \end{itemize}
+Video av resultatet kan ses på \url{http://www.qualisys.com/software/unity/}
+}
+\section{Programmeringsspråk}
+\cvitemwithcomment{C\#}{Mycket erfaren}{Som huvudsakliga proffesionella programmeringsspråk 4 år}
+\cvitemwithcomment{Java}{Erfaren}{Användes under utbildningen samt hobbyprojekt}
+\cvitemwithcomment{Dart}{Grundläggande}{Används i hobbyprojekt}
+\cvitemwithcomment{Python}{Grundläggande}{Används i hobbyprojekt}
+\cvitemwithcomment{Haskell}{Grundläggande}{Användes under utbildningen}
+\cvitemwithcomment{JavaScript}{Grundläggande}{För hobbyprojekt och utbildning}
+\cvitemwithcomment{C}{Grundläggande}{Använts i utbildning}
+
+% \clearpage
+\section{Utbildning} 
 \cventry{2012--2015}{M.S. in Computer Science - Algorithms, Languages and Logic}{\newline Department of Computer Science and Engineering}{Chalmers University}{}{}
 % arguments 3 to 6 can be left empty
 \cventry{2008--2012}{B.S. in  Software Engineering}{Chalmers University}{}{}{}  
@@ -56,31 +97,10 @@
 
 \section{Master thesis}
 \cvitem{titel}{\emph{A Real-Time Adaptation of Inverse Kinematics for Motion Capture}}
-\cvitem{examinator}{Ulf Assarsson}
 \cvitem{beskrivning}{Animating characters from motion capture in real-time using Inverse Kinematics} % Beskrivning på svenska
+\cvitem{}{\url{http://publications.lib.chalmers.se/records/fulltext/219734/219734.pdf}}
 
-\section{Arbetslivserfarenhet}
-\cventry{2015}{Utvecklare}{Qualisys AB}{Gothenburg}{}{Projektanställd för  att utveckla en lösning att från motion capture data gå till att driva en männsklig karaktär i realtid, arbetet var en fortsättning på exjobbet. 
-\newline
-Resultat:
-\begin{itemize}
-\item Ett system för realtids animering av karaktärer från motion capture.
-\item Automatisk identifiering av segment av humanoida karaktärer i Unity.
-\item Demonstrationsspel i VR för att visa möjligheter med ett mo-cap system.
-\end{itemize}
-Video av resultatet kan ses på \url{http://www.qualisys.com/software/unity/}
-}
 
-\section{Programmeringsspråk}
-\cvitemwithcomment{C\#}{Erfaren}{Utvecklade i C\# inom exjobbet och för Qualisys}
-\cvitemwithcomment{Java}{Erfaren}{Java användes under större delen av utbildningen samt hobby projekt}
-\cvitemwithcomment{Haskell}{Grundläggande}{Användes som språk för kurser inom funktionell programmering}
-\cvitemwithcomment{Python}{Grundläggande}{Använts för hobbyprojekt}
-\cvitemwithcomment{JavaScript}{Grundläggande}{För hobbyprojekt och utbildning}
-\cvitemwithcomment{Erlang}{Grundläggande}{Använts i utbildning}
-\cvitemwithcomment{C}{Grundläggande}{Använts i utbildning}
-\cvitemwithcomment{Matlab}{Grundläggande}{Använts i utbildning}
-\clearpage
 
 
 \section{Urval av kurser}
@@ -93,20 +113,19 @@ Video av resultatet kan ses på \url{http://www.qualisys.com/software/unity/}
   \cvcolumn{Other}{\begin{itemize}\item Concurrent programming\item Cryptography\item Compiler construction\item Distributed applications\end{itemize}}
 \end{cvcolumns}
 
-
 \section{Relevanta kunskaper}
-\cvdoubleitem{Testing}{NUnit, Junit, QuickCheck}{OS}{Windows, Linux}\cvdoubleitem{Scripting}{bash-scripting, Google Apps Script}{IDEs}{NetBeans, Eclipse, Visual Studios, Android Studio, MonoDevelop}
-\cvdoubleitem{Version control} {Git, CVS, SVN}{Enviorments}{Andriod, Unity game engine}
-\iffalse
-\section{Övrigt}
-\cvitem{Sydafrika projekt}{Var på resa i sydafrika}
-\cvitem{Andriod application}{Android app at Android market}
-\fi
+\cvdoubleitem
+{DevOps} {git, bash-scripting, Google Apps Script, Cake (C\# Make), Azure DevOps}
+{IDEs} {Visual Studio, Visual Studio Code, XCode, NetBeans, Eclipse, Android Studio}
+\cvdoubleitem
+{Testing} {NUnit, XUnit, Xamarin.UITest}
+{Agile} {Scrum, Kanban}
+
+
 \section{Intressen}
 \cvitem{Brädspel}{Perfekta blandningen av problemlösning och socialt umgänge}
-\cvitem{SciFi}{Stor konsument av både böcker och filmer}
-\cvitem{Agrikultur}{Född och uppvuxen inom lantbruk}
-\cvitem{Roligt}{Född och uppvuxen inom lantbruk}
+\cvitem{Sci-Fi}{Stor konsument av både böcker och filmer}
+\cvitem{Agrikultur}{Uppvuxen på lantbruk på gotland}
 
 \section{Repositories och länkar}
 \cvlistitem{\url{https://github.com/bornold/}}
@@ -115,7 +134,7 @@ Video av resultatet kan ses på \url{http://www.qualisys.com/software/unity/}
 \section{Referenser}
 \begin{cvcolumns}
   \cvcolumn{Qualisys}{ \textbf{Morgan Larsson} \newline +46(0)~707~--~76~54~71 \newline \href{mailto:morgan.larsson@qualisys.se}{morgan.larsson@qualisys.se} }
-
+  \cvcolumn{Combitech}{ \textbf{Roger Nilsson} \newline +46(0)~707~--~76~54~71 \newline \href{mailto:someother.mail.com}{mailto:someother.mail.com} }
 \end{cvcolumns}
 
 \clearpage
