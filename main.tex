@@ -19,7 +19,7 @@
 \name{Jonas}{Bornold}
 \title{CV}                               % optional, remove / comment the line if not wanted
 \email{jonas.bornold@gmail.com}                               % optional, remove / comment the line if not wanted
-\address{Bandgårdsgatan 21 1801}{}{411 12 Göteborg}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\address{Bandgårdsgatan 21 1801}{411 12 Göteborg}{}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
 \phone[mobile]{+46(0)~702~--~75~44~93}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
 %\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
 \social[linkedin]{bornold}                        % optional, remove / comment the line if not wanted
@@ -27,7 +27,7 @@
 \social[github]{bornold}                              % optional, remove / comment the line if not wanted
 %\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
 \photo[128pt][0pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
-%\quote{You need to get used to killing it, often, so you can replace it with whatever you end up needing.}                                 % optional, remove / comment the line if not wanted
+%\quote{\[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]}                                 % optional, remove / comment the line if not wanted
 
 % bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
 %   to show numerical labels in the bibliography (default is to show no labels)
@@ -48,44 +48,44 @@
 %\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
+
 \section{Arbetslivserfarenhet}
+\cventry{2016--idag}{Lead Developer}{Combitech AB}{Gothenburg}{}
+{
+  Utvecklat en mängd koncept appar till Volvo AB i både Android Native och Xamarin. 
+  Detta ledde till ett två års projekt emot Volvo AB och Mack Trucks inom diagnostik och eftermarknad.
+  \newline
+  Resultatet blev 4 appar:
+  \begin{itemize}
+  \item Två Android applikationer i Volvo och Mack Trucks brand
+  \item Två iOS applikation i Volvo och Mack Trucks brand
+  \end{itemize}
+  Dessa appar har ännu inte släppts till marknaden.
+}
+\section{}
 \cventry{2015}{Utvecklare}{Qualisys AB}{Gothenburg}{}
 {
   Projektanställd för  att utveckla en lösning att från motion capture data gå till att driva en männsklig karaktär i realtid, arbetet var en fortsättning på exjobbet.
-\begin{itemize}
-  \item Ett system för realtids animering av karaktärer från motion capture.
-  \item Automatisk identifiering av segment av humanoida karaktärer i Unity.
-  \item Demonstrationsspel i VR för att visa möjligheter med ett mo-cap system.
-  \end{itemize}
-Video av resultatet kan ses på 
-\newline
-\url{qualisys.com/software/unity/}
-}
-
-\cventry{2016--idag}{Lead Developer}{Combitech AB}{Gothenburg}{}
-{
-  Varius proof of concept applications
+  \newline
+  Resultatet blev:
   \begin{itemize}
     \item Ett system för realtids animering av karaktärer från motion capture.
     \item Automatisk identifiering av segment av humanoida karaktärer i Unity.
     \item Demonstrationsspel i VR för att visa möjligheter med ett mo-cap system.
   \end{itemize}
-  Xamarin, Xamarin.Forms
-  \begin{itemize}
-  \item Android applikation i Volvo och Mack Trucks brand
-  \item iOS applikation i Volvo och  Mack Trucks brand
-  \end{itemize}
+  Video kan ses på 
+  \url{qualisys.com/software/unity/}
 }
-    
+
 \section{Programmeringsspråk}
 \cvitemwithcomment{C\#}{Mycket erfaren}{Som huvudsakliga proffesionella programmeringsspråk}
-\cvitemwithcomment{Java}{Erfaren}{Användes under utbildningen, hobbyprojekt samt flera projekt}
+\cvitemwithcomment{Java}{Erfaren}{Används proffessionellt, under utbildningen samt flera hobbyprojekt}
 \cvitemwithcomment{Dart}{Grundläggande}{Används i hobbyprojekt}
 \cvitemwithcomment{Python}{Grundläggande}{Används i hobbyprojekt}
-\cvitemwithcomment{Haskell}{Grundläggande}{Användes under utbildningen}
-\cvitemwithcomment{JavaScript}{Grundläggande}{För hobbyprojekt och utbildning}
-\cvitemwithcomment{C}{Grundläggande}{Används i utbildning}
-\cvitemwithcomment{C++}{Grundläggande}{Används i utbildning}
+\cvitemwithcomment{JavaScript}{Grundläggande}{Hobbyprojekt och utbildning}
+\cvitemwithcomment{Haskell}{Grundläggande}{Användes i utbildning}
+\cvitemwithcomment{C++}{Grundläggande}{Användes i utbildning}
+\cvitemwithcomment{C}{Grundläggande}{Användes i utbildning}
 
 % \clearpage
 \section{Utbildning} 
@@ -99,7 +99,7 @@ Video av resultatet kan ses på
 \cvitem{beskrivning}{Animating characters from motion capture in real-time} % Beskrivning på svenska
 \cvitem{}{\url{publications.lib.chalmers.se/records/fulltext/219734/219734.pdf}}
 
-
+\iffalse
 \section{Urval av kurser}
 \begin{cvcolumns}
   \cvcolumn{Algorithms}{\begin{itemize} \item Algorithms for machine learning and inference\item Data structures and algorithms\item Algorithms\end{itemize}}
@@ -109,12 +109,16 @@ Video av resultatet kan ses på
   \cvcolumn{Testing and security}{\begin{itemize}\item Language-based security\item Testing, debugging and verification\item Software engineering using formal methods\end{itemize}}
   \cvcolumn{Other}{\begin{itemize}\item Concurrent programming\item Cryptography\item Compiler construction\item Distributed applications\end{itemize}}
 \end{cvcolumns}
-
+\fi
 \section{Relevanta kunskaper}
+\cvitem
+{Mobilt} {Xamarin, Xamarin.Forms, Android, iOS, Flutter}
+\cvitem
+{Certifieringar}{\href{https://devconnect.xamarin.com/profile/11738}{Xamarin Certified Mobile Professional}}
 \cvitem
 {DevOps} {git, bash-scripting, Google Apps Script, Azure DevOps, Cake (C\# Make)}
 \cvitem
-{IDEs} {Visual Studio, VS Code, XCode, VIM, Android Studio, Unity}
+{IDEs} {Visual Studio, VS Code, Xcode, vim, Android Studio, Unity}
 \cvitem
 {Testing} {NUnit, XUnit, JUnit, Xamarin.UITest}
 \cvitem
@@ -124,7 +128,8 @@ Video av resultatet kan ses på
 \section{Intressen}
 \cvitem{Brädspel}{Perfekta blandningen av problemlösning och socialt umgänge}
 \cvitem{Sci-Fi}{Stor konsument av både böcker och filmer}
-\cvitem{Agrikultur}{Uppvuxen på gotländsk lantbruk}
+\cvitem{Smarta hem}{I synnerlighet när man får skapa det själv}
+\cvitem{Agrikultur}{Född och uppvuxen på gotländskt lantbruk}
 
 \section{Repositories och länkar}
 \cvitem{}{\url{github.com/bornold}}
