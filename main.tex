@@ -1,7 +1,7 @@
 \documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
-\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvstyle{fancy}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
 \moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
 \renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 \nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
@@ -12,14 +12,14 @@
 
 % adjust the page margins
 \usepackage[scale=0.75]{geometry}
-\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+\setlength{\hintscolumnwidth}{5cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 % personal data
 \name{Jonas}{Bornold}
 \title{CV}                               % optional, remove / comment the line if not wanted
 \email{jonas.bornold@gmail.com}                               % optional, remove / comment the line if not wanted
-\address{Richertsgatan 2F}{412 81}{Göteborg}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\address{Richertsgatan 2F}{412 81 Göteborg}{}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
 \phone[mobile]{+46(0)~702~--~75~44~93}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
 %\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
 \social[linkedin]{bornold}                        % optional, remove / comment the line if not wanted
@@ -42,51 +42,46 @@
 %            content
 %----------------------------------------------------------------------------------
 \begin{document}
+
 %\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
-
 \section{Arbetslivserfarenhet}
-
-\cventry{2017--Idag}{Lead developer}{Combitech AB}{Gothenburg}{}
+\cventry{2015}{Utvecklare}{Qualisys AB}{Gothenburg}{}
 {
+  Projektanställd för  att utveckla en lösning att från motion capture data gå till att driva en männsklig karaktär i realtid, arbetet var en fortsättning på exjobbet.
+\begin{itemize}
+  \item Ett system för realtids animering av karaktärer från motion capture.
+  \item Automatisk identifiering av segment av humanoida karaktärer i Unity.
+  \item Demonstrationsspel i VR för att visa möjligheter med ett mo-cap system.
+  \end{itemize}
+Video av resultatet kan ses på \url{qualisys.com/software/unity/}
+}
+
+\cventry{2016-idag}{Developer}{Combitech AB}{Gothenburg}{}
+{
+  Varius proof of concept applications
+  \begin{itemize}
+    \item Ett system för realtids animering av karaktärer från motion capture.
+    \item Automatisk identifiering av segment av humanoida karaktärer i Unity.
+    \item Demonstrationsspel i VR för att visa möjligheter med ett mo-cap system.
+  \end{itemize}
   Xamarin, Xamarin.Forms
   \begin{itemize}
   \item Android applikation i Volvo och Mack Trucks brand
   \item iOS applikation i Volvo och  Mack Trucks brand
   \end{itemize}
-  Video av resultatet kan ses på \url{http://www.qualisys.com/software/unity/}
 }
-
-\cventry{2016}{Developer}{Combitech AB}{Gothenburg}{}
-{
-  Varius proof of concept applications
-  \begin{itemize}
-  \item Ett system för realtids animering av karaktärer från motion capture.
-  \item Automatisk identifiering av segment av humanoida karaktärer i Unity.
-  \item Demonstrationsspel i VR för att visa möjligheter med ett mo-cap system.
-  \end{itemize}
-}
-
-\cventry{2015}{Utvecklare}{Qualisys AB}{Gothenburg}{}
-{
-  Projektanställd för  att utveckla en lösning att från motion capture data gå till att driva en männsklig karaktär i realtid, arbetet var en fortsättning på exjobbet. 
-  \newline
-  \begin{itemize}
-  \item Ett system för realtids animering av karaktärer från motion capture.
-  \item Automatisk identifiering av segment av humanoida karaktärer i Unity.
-  \item Demonstrationsspel i VR för att visa möjligheter med ett mo-cap system.
-  \end{itemize}
-Video av resultatet kan ses på \url{http://www.qualisys.com/software/unity/}
-}
+    
 \section{Programmeringsspråk}
 \cvitemwithcomment{C\#}{Mycket erfaren}{Som huvudsakliga proffesionella programmeringsspråk 4 år}
-\cvitemwithcomment{Java}{Erfaren}{Användes under utbildningen samt hobbyprojekt}
+\cvitemwithcomment{Java}{Erfaren}{Användes under utbildningen, hobbyprojekt samt flera projekt}
 \cvitemwithcomment{Dart}{Grundläggande}{Används i hobbyprojekt}
 \cvitemwithcomment{Python}{Grundläggande}{Används i hobbyprojekt}
 \cvitemwithcomment{Haskell}{Grundläggande}{Användes under utbildningen}
 \cvitemwithcomment{JavaScript}{Grundläggande}{För hobbyprojekt och utbildning}
-\cvitemwithcomment{C}{Grundläggande}{Använts i utbildning}
+\cvitemwithcomment{C}{Grundläggande}{Används i utbildning}
+\cvitemwithcomment{C++}{Grundläggande}{Används i utbildning}
 
 % \clearpage
 \section{Utbildning} 
@@ -128,8 +123,8 @@ Video av resultatet kan ses på \url{http://www.qualisys.com/software/unity/}
 \cvitem{Agrikultur}{Uppvuxen på lantbruk på gotland}
 
 \section{Repositories och länkar}
-\cvlistitem{\url{https://github.com/bornold/}}
-\cvlistitem{\url{http://www.qualisys.com/software/unity/}}
+\cvlistitem{\url{github.com/bornold}}
+\cvlistitem{\url{qualisys.com/software/unity}}
 
 \section{Referenser}
 \begin{cvcolumns}
