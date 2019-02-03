@@ -2,7 +2,7 @@
 
 % moderncv themes
 \moderncvstyle{fancy}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
-\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+\moderncvcolor{burgundy}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
 \renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 \nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
@@ -11,7 +11,7 @@
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 
 % adjust the page margins
-\usepackage[scale=0.75]{geometry}
+\usepackage[scale=0.80]{geometry}
 \setlength{\hintscolumnwidth}{5cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
@@ -27,7 +27,9 @@
 \social[github]{bornold}                              % optional, remove / comment the line if not wanted
 %\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
 \photo[128pt][0pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
-%\quote{\[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]}                                 % optional, remove / comment the line if not wanted
+% \quote{Any fool can write code that a computer can understand. Good programmers write code that humans can understand. - Martin Fowler} % optional
+% \quote{Code is like humor. When you have to explain it, it’s bad.}
+\quote{Simplicity is prerequisite for reliability. -- E.W. Dijkstra}
 
 % bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
 %   to show numerical labels in the bibliography (default is to show no labels)
@@ -50,7 +52,7 @@
 \makecvtitle
 
 \section{Arbetslivserfarenhet}
-\cventry{2016--idag}{Lead Developer}{Combitech AB}{Gothenburg}{}
+\cventry{2016--idag}{Mobile Developer}{Combitech}{Gothenburg}{}
 {
   Utvecklat en mängd koncept appar till Volvo AB i både Android Native och Xamarin. 
   Detta ledde till ett två års projekt emot Volvo AB och Mack Trucks inom diagnostik och eftermarknad.
@@ -78,8 +80,8 @@
 }
 
 \section{Programmeringsspråk}
-\cvitemwithcomment{C\#}{Mycket erfaren}{Som huvudsakliga proffesionella programmeringsspråk}
-\cvitemwithcomment{Java}{Erfaren}{Används proffessionellt, under utbildningen samt flera hobbyprojekt}
+\cvitemwithcomment{C\#}{Mycket erfaren}{Huvudsakliga proffesionella programmeringsspråk}
+\cvitemwithcomment{Java}{Erfaren}{Proffessionellt, i utbildningen, samt i hobbyprojekt}
 \cvitemwithcomment{Dart}{Grundläggande}{Används i hobbyprojekt}
 \cvitemwithcomment{Python}{Grundläggande}{Används i hobbyprojekt}
 \cvitemwithcomment{JavaScript}{Grundläggande}{Hobbyprojekt och utbildning}
@@ -110,6 +112,8 @@
   \cvcolumn{Other}{\begin{itemize}\item Concurrent programming\item Cryptography\item Compiler construction\item Distributed applications\end{itemize}}
 \end{cvcolumns}
 \fi
+
+
 \section{Relevanta kunskaper}
 \cvitem
 {Mobilt} {Xamarin, Xamarin.Forms, Android, iOS, Flutter}
@@ -121,14 +125,11 @@
 {IDEs} {Visual Studio, VS Code, Xcode, vim, Android Studio, Unity}
 \cvitem
 {Testing} {NUnit, XUnit, JUnit, Xamarin.UITest}
-\cvitem
-{Agile} {Scrum, Kanban}
 
 
 \section{Intressen}
 \cvitem{Brädspel}{Perfekta blandningen av problemlösning och socialt umgänge}
 \cvitem{Sci-Fi}{Stor konsument av både böcker och filmer}
-\cvitem{Smarta hem}{I synnerlighet när man får skapa det själv}
 \cvitem{Agrikultur}{Född och uppvuxen på gotländskt lantbruk}
 
 \section{Repositories och länkar}
@@ -137,8 +138,8 @@
 
 \section{Referenser}
 \begin{cvcolumns}
+  \cvcolumn{Combitech}{ \textbf{Roger Nilsson} \newline +46(0)~706~--~25~56~62 \newline \href{mailto:rogerni.nilsson@telia.com}{rogerni.nilsson@telia.com} }
   \cvcolumn{Qualisys}{ \textbf{Morgan Larsson} \newline +46(0)~707~--~76~54~71 \newline \href{mailto:morgan.larsson@qualisys.se}{morgan.larsson@qualisys.se} }
-  \cvcolumn{Combitech}{ \textbf{Roger Nilsson} \newline +46(0)~733~--~17~50~94 \newline \href{mailto:roger.nilsson@combitech.se}{roger.nilsson@combitech.se} }
 \end{cvcolumns}
 
 \clearpage
